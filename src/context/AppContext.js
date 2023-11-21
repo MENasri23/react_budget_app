@@ -104,6 +104,9 @@ export const AppProvider = (props) => {
             return (total = total + item.cost);
         }, 0);
         remaining = state.budget - totalExpenses;
+        if (remaining < 0) {
+            alert("")
+        }
     }
 
     return (
